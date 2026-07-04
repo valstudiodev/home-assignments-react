@@ -6,7 +6,7 @@
   "homepage": "https://valstudiodev.github.io/home-assignments-react/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --emptyOutDir",
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
