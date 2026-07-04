@@ -1,0 +1,40 @@
+import { Dispatch, SetStateAction, ReactNode } from "react";
+import { IconFolder } from "@/assets/icons/Icons";
+
+interface HomeProps {
+  activePage: string;
+  setActivePage: Dispatch<SetStateAction<string>>;
+  renderContent: ReactNode; // ReactNode охоплює компоненти, рядки, числа або null
+}
+
+export default function Home({ activePage, setActivePage, renderContent }: HomeProps) {
+  return (
+    <main className="app-main px-5 grow container">
+
+      {/* ЯКЩО стан рівний 'menu' — ПОКАЗУЄМО ГОЛОВНЕ МЕНЮ */}
+      {activePage === 'menu' && (
+        <div className="main-menu flex flex-col items-center gap-5">
+          <h2 className="main-menu__title text-3xl font-bold text-center text-[clamp(1rem,2.5vw,2rem)]">Catalog of my homework with React</h2>
+          <p className="main-menu__text text-1xl text-grey text-center">
+            Select a task from the list below to check its performance:
+          </p>
+
+          <ul className="main-menu__list flex flex-col gap-3 text-xl">
+            <li className="main-menu__item cursor-pointer hover:text-white transition flex items-center gap-2" onClick={() => setActivePage('hw1')}>
+              <IconFolder /> <span className="main-menu__span hover:text-grey transition duration-300">Homework 1</span>
+            </li>
+            <li className="main-menu__item cursor-pointer hover:text-white transition flex items-center gap-2" onClick={() => setActivePage('hw2')}>
+              <IconFolder /> <span className="main-menu__span hover:text-grey transition duration-300">Homework 2</span>
+            </li>
+            <li className="main-menu__item cursor-pointer hover:text-white transition flex items-center gap-2" onClick={() => setActivePage('hw3')}>
+              <IconFolder /> <span className="main-menu__span hover:text-grey transition duration-300">Homework 3</span>
+            </li>
+          </ul>
+        </div>
+      )}
+
+      {renderContent}
+
+    </main>
+  )
+}
