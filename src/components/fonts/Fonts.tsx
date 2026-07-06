@@ -24,6 +24,6 @@ export function Subtitle({ title }: Subtitle) {
 
 export function SubtitleTask({ number }: SubtitleTask) {
   return (
-    <h2 className="text-white text-3xl">Task №{number}</h2>
+    <h2 className="text-white text-3xl text-center mb-5">Task №{number}</h2>
   )
 }

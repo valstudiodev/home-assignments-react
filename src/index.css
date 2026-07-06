@@ -1,2 +1,17 @@
 @import 'tailwindcss';
 @import './styles/settings/tailwindstyle.css';
+
+
+@theme {
+  --color-primary: #F8FAFC;
+
+  --color-bg:#0B0F19;
+  --color-bg-card:#1E293B;
+
+  --color-border:#334155;
+
+  --color-btn-pending:#F59E0B;
+  --color-btn-cooking:#3B82F6;
+  --color-btn-ready:#10B981;
+
+}
