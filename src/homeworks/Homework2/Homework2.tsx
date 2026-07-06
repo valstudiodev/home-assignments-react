@@ -354,7 +354,7 @@ function EconomyOption(): React.JSX.Element {
         <label htmlFor="">
           <input type="checkbox"
             checked={chips}
-            onChange={(e) => setChips(e.target.value)}
+            onChange={(e) => setChips(e.target.checked)}
           /> Want's chips?
         </label>
       </div>
