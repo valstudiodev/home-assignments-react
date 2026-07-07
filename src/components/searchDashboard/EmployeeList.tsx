@@ -3,7 +3,7 @@ import { EmployeeListProps, Employee } from "./types";
 
 export function EmployeeList({ items }: EmployeeListProps): React.JSX.Element {
   if (items.length === 0) {
-    return <p>Працівників не знайдено</p>
+    return <p>No employees found</p>
   }
 
   return (

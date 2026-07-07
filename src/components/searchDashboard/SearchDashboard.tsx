@@ -5,6 +5,11 @@ import { initialEmployees } from "../../data/DataTask3";
 import { SearchInput } from "./SearchInput";
 import { EmployeeList } from "./EmployeeList";
 
+// =======================================================================
+// Задача 7. Динамічний пошук. Є список працівників і поле пошуку. 
+// При введенні відображаються усі, які містять вказаний фрагмент
+// =======================================================================
+
 export function SearchDashboard(): React.JSX.Element {
   const [searchTerm, setSearchTerm] = useState<string>('')
 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 
 export function Counter(): React.JSX.Element {
   const [count, setCount] = useState<number>(0);
@@ -34,20 +34,20 @@ export function Counter(): React.JSX.Element {
 
 
 // ============ Focus =============
-export function InputFocus() {
-  const inputRef = useRef(null)
+// export function InputFocus() {
+//   const inputRef = useRef(null)
 
-  function handleClick() {
-    inputRef.current.focus()
-  }
+//   function handleClick() {
+//     inputRef.current.focus()
+//   }
 
-  return (
-    <div>
-      <button onClick={handleClick}>Set focus</button>
-      <input type="text" ref={inputRef} />
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <button onClick={handleClick}>Set focus</button>
+//       <input type="text" ref={inputRef} />
+//     </div>
+//   )
+// }
 
 
 // ================

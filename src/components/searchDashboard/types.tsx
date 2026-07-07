@@ -1,5 +1,5 @@
 export interface SearchInputProps {
-  ref: React.RefObject<HTMLInputElement>;
+  ref: React.RefObject<HTMLInputElement | null>;
   value: string;
   onChange: (value: string) => void
 }
