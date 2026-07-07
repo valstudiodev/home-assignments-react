@@ -2,6 +2,7 @@ import { TitleHomework } from "@/components/fonts/Fonts";
 // import { useEffect, useRef, useState } from "react";
 import { SearchDashboard } from "../../components/searchDashboard/SearchDashboard";
 import { SubtitleTask } from "../../components/fonts/Fonts";
+import { Board } from "../../components/ticTacToe/Board";
 
 export default function Homework3() {
   return (
@@ -12,8 +13,9 @@ export default function Homework3() {
 
         {/* Task 7 */}
         {/* Задача 7. Динамічний пошук. Є список працівників і поле пошуку. При введенні відображаються усі, які містять вказаний фрагмент */}
-        <SubtitleTask number={7} />
-        <SearchDashboard />
+        {/* <SubtitleTask number={7} /> */}
+        {/* <SearchDashboard /> */}
+        <Board />
       </div>
     </div>
   );
