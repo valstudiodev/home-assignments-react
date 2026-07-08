@@ -39,7 +39,7 @@ export const IconBank = () => (
 )
 
 export const IconSmile = () => (
-  <svg viewBox="0 0 24 24" className="w-[100px] h-[100px] fill-[#FFD700] stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" className="w-25 h-25 fill-[#FFD700] stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     {/* Обличчя */}
     <circle cx="12" cy="12" r="10" />
     {/* Ліве око */}
@@ -48,5 +48,22 @@ export const IconSmile = () => (
     <path d="M15 9h.01" strokeWidth="3" />
     {/* Посмішка */}
     <path d="M8 13a4 4 0 0 0 8 0" fill="none" />
+  </svg>
+);
+
+// ============= Icon cross =============
+export const IconCross = () => (
+  <svg viewBox="0 0 24 24" className="w-25 h-25 fill-none stroke-[#FF4A4A]" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    {/* Перша діагональ хрестика */}
+    <path d="M18 6L6 18" />
+    {/* Друга діагональ хрестика */}
+    <path d="M6 6l12 12" />
+  </svg>
+);
+
+export const IconZero = () => (
+  <svg viewBox="0 0 24 24" className="w-[100px] h-[100px] fill-none stroke-[#007BFF]" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    {/* Нулик (ігрове коло) */}
+    <circle cx="12" cy="12" r="7" />
   </svg>
 );

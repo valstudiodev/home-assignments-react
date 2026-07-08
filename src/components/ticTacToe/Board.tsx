@@ -1,11 +1,12 @@
 import { ButtonSquare } from "./Buttons";
-import { useState } from "react";
+import { BoardProps, SquareValue } from "./types";
 
-export function Board(): React.JSX.Element {
-  const [squares, setSquares] = useState(Array(9).fill(null))
-  const [xIsNext, setXisNext] = useState<boolean>(false);
+export function Board({ xIsNext, squares, onPlay }: BoardProps): React.JSX.Element {
 
   function handleClick(i: number): void {
+
+    if (squares[i] || calculateWinner(squares)) return
+
     const nextSquares = squares.slice()
 
     if (xIsNext) {
@@ -13,12 +14,20 @@ export function Board(): React.JSX.Element {
     } else
       nextSquares[i] = 'O'
 
-    setSquares(nextSquares)
-    setXisNext(!xIsNext)
+    onPlay(nextSquares)
   }
+
+  const winner = calculateWinner(squares)
+  let status: string;
+
+  if (winner) {
+    status = "Winner: " + winner
+  } else
+    status = "Next player: " + (xIsNext ? 'X' : 'O')
 
   return (
     <div className="board">
+      <p className="status">{status}</p>
       <div className="board-row flex
       items-center">
         <ButtonSquare value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -39,7 +48,25 @@ export function Board(): React.JSX.Element {
       </div>
     </div>
   )
+}
 
+function calculateWinner(squares: SquareValue[]): SquareValue {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+  ]
 
-
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i]
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a]
+    }
+  }
+  return null
 }

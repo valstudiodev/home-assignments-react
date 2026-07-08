@@ -1,17 +1,13 @@
 // import { useState } from "react";
 import { ButtonSquareProps } from "./types";
+import { IconCross, IconZero } from "../../assets/icons/Icons";
 
 export function ButtonSquare({ value, onSquareClick }: ButtonSquareProps): React.JSX.Element {
-  // const [initValue, setInitValue] = useState<string | null>(null);
-
-  // function handleClick(): void {
-  //   setInitValue('X')
-  // }
-
   return <button onClick={onSquareClick}
-    className="square w-12.5 font-bold
-    h-12.5 border cursor-pointer hover:text-bg
-    transition-all duration-300 hover:bg-amber-50">
-    {value}
+    className="square w-25 font-bold
+    h-25 border cursor-pointer
+    transition-all duration-300">
+    {value === 'X' && <IconCross />}
+    {value === 'O' && <IconZero />}
   </button>
 }
