@@ -15,3 +15,16 @@
   --color-btn-ready:#10B981;
 
 }
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+
+@utility flex-c-hor {
+  @apply flex items-center;
+}
+
+@utility hover-base {
+  @apply transition-all duration-300;
+}

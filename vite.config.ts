@@ -18,7 +18,8 @@ export default defineConfig({
       'homeworks': path.resolve(__dirname, './src/homeworks'),
       'styles': path.resolve(__dirname, './src/styles'),
       'assets': path.resolve(__dirname, './src/assets'),
-      'constants': path.resolve(__dirname, './src/constants')
+      'constants': path.resolve(__dirname, './src/constants'),
+      'icons': path.resolve(__dirname, './src/assets/icons/Icons.tsx')
     },
   },
 

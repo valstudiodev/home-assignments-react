@@ -62,8 +62,30 @@ export const IconCross = () => (
 );
 
 export const IconZero = () => (
-  <svg viewBox="0 0 24 24" className="w-[100px] h-[100px] fill-none stroke-[#007BFF]" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" className="w-25 h-25 fill-none stroke-[#007BFF]" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     {/* Нулик (ігрове коло) */}
     <circle cx="12" cy="12" r="7" />
+  </svg>
+);
+
+// ============== // Іконка відкритого ока (показати пароль) ==============
+export const IconEyeVisible = () => (
+  <svg viewBox="0 0 24 24" className="w-10 h-10 fill-none stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Контур ока */}
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+    {/* Зіниця */}
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);
+
+// Іконка закресленого ока (сховати пароль)
+export const IconEyeHidden = () => (
+  <svg viewBox="0 0 24 24" className="w-10 h-10 fill-none stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Контур ока */}
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+    {/* Зіниця */}
+    <circle cx="12" cy="12" r="3" />
+    {/* Лінія закреслення */}
+    <line x1="3" y1="3" x2="21" y2="21" />
   </svg>
 );

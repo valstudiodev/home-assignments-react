@@ -18,7 +18,7 @@ export function Game(): React.JSX.Element {
     setCurrentMove(nextMove)
   }
 
-  const moves = history.map((squares: SquareValue[], move: number) => {
+  const moves = history.map((_squares: SquareValue[], move: number) => {
     let description: string;
     if (move > 0)
       description = 'Go to move #' + move

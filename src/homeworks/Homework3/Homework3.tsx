@@ -3,6 +3,8 @@ import { TitleHomework } from "@/components/fonts/Fonts";
 import { SearchDashboard } from "../../components/searchDashboard/SearchDashboard";
 import { SubtitleTask } from "../../components/fonts/Fonts";
 import { Game } from "../../components/ticTacToe/Game";
+// import Counter from "../../components/counter/Counter";
+import { PasswordVisibility } from "@/components";
 
 export default function Homework3() {
   return (
@@ -16,6 +18,11 @@ export default function Homework3() {
         <SubtitleTask number={7} />
         <SearchDashboard />
         <Game />
+
+        {/* ================= */}
+        {/* <Counter /> */}
+        {/* <Toggle /> */}
+        <PasswordVisibility />
       </div>
     </div>
   );
