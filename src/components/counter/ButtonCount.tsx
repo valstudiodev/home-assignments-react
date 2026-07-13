@@ -1,4 +1,4 @@
-import { count } from "node:console";
+// import { count } from "node:console";
 import { ButtonCountProps, ButtonResetProps } from "./Types";
 
 export function ButtonCount({ title, onClick, disabled }: ButtonCountProps): React.JSX.Element {

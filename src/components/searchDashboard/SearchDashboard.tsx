@@ -27,7 +27,7 @@ export function SearchDashboard(): React.JSX.Element {
 
   return (
     <form className="filter-employees 
-     bg-bg-card p-10 rounded-2xl">
+     bg-bg-card p-10 rounded-2xl mb-10">
       <SearchInput ref={inputRef} value={searchTerm} onChange={setSearchTerm} />
       <EmployeeList items={filteresEmployees} />
     </form>

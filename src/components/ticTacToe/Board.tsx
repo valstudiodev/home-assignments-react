@@ -26,21 +26,22 @@ export function Board({ xIsNext, squares, onPlay }: BoardProps): React.JSX.Eleme
     status = "Next player: " + (xIsNext ? 'X' : 'O')
 
   return (
-    <div className="board">
-      <p className="status">{status}</p>
-      <div className="board-row flex
+    <div className="board flex flex-col
+    items-center w-full">
+      <p className="status text-2xl mb-2">{status}</p>
+      <div className="board-row 
       items-center">
         <ButtonSquare value={squares[0]} onSquareClick={() => handleClick(0)} />
         <ButtonSquare value={squares[1]} onSquareClick={() => handleClick(1)} />
         <ButtonSquare value={squares[2]} onSquareClick={() => handleClick(2)} />
       </div>
-      <div className="board-row flex
+      <div className="board-row 
       items-center">
         <ButtonSquare value={squares[3]} onSquareClick={() => handleClick(3)} />
         <ButtonSquare value={squares[4]} onSquareClick={() => handleClick(4)} />
         <ButtonSquare value={squares[5]} onSquareClick={() => handleClick(5)} />
       </div>
-      <div className="board-row flex
+      <div className="board-row 
       items-center">
         <ButtonSquare value={squares[6]} onSquareClick={() => handleClick(6)} />
         <ButtonSquare value={squares[7]} onSquareClick={() => handleClick(7)} />

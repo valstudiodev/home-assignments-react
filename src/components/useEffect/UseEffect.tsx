@@ -1,37 +1,4 @@
-import { useState, useEffect } from "react"
-
-export function Counter(): React.JSX.Element {
-  const [count, setCount] = useState<number>(0);
-
-  useEffect(() => {
-
-    console.log('Count changed:', count);
-
-  }, [count]);
-
-  function increseCount() {
-    setCount(prev => prev + 1)
-  }
-
-  function decreseCount() {
-    setCount(prev => prev - 1)
-  }
-
-  return (
-    <div className="flex items-center">
-      <button onClick={decreseCount}
-        className="bg-amber-700 w-12.5 \
-      h-12.5 text-center rounded-3xl font-bold">-</button>
-      <span className="w-12.5 text-center content-center">
-        {count}
-      </span>
-      <button onClick={increseCount}
-        className="bg-amber-700 w-12.5 \
-      h-12.5 text-center rounded-3xl font-bold">+</button>
-    </div >
-  )
-}
-
+import React, { useState, useEffect, ReactEventHandler, use } from "react"
 
 // ============ Focus =============
 // export function InputFocus() {
@@ -93,4 +60,64 @@ export function UseEffectDeep() {
       />
     </div>
   );
+}
+
+
+// ========== task 1 ============
+interface ProductsProps {
+  products: string
+}
+// type Items = [
+//   items: ProductsProps,
+// ]
+export const products = [
+  "iPhone 16",
+  "Samsung S25",
+  "MacBook Pro",
+  "AirPods Pro",
+  "iPad Air",
+];
+export function ProductSearch({ items }: { items: string[] }): React.JSX.Element {
+  const [search, setSearch] = useState<string>('');
+  const [filteredItems, setFilteredItems] = useState<string[]>([]);
+
+  function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>): void {
+    const value = e.target.value
+
+    setSearch(value)
+  }
+
+  useEffect(() => {
+    if (search !== "") {
+      const result = items.filter(item =>
+        item.toLowerCase().trim().includes(search.toLowerCase())
+      );
+
+      setFilteredItems(result);
+    } else {
+      setFilteredItems([]);
+    }
+  }, [search, items]);
+
+
+  return (
+    <div className="product-search bg-bg-card p-5 min-h-75">
+      <div className="product-search__inner flex
+        items-center gap-4 mb-5">
+        <label htmlFor="">Searching</label>
+        <input type="text"
+          className="border py-1 pl-1"
+          value={search}
+          onChange={handleSearchChange} />
+      </div>
+      <ul className="product-search__render w-full
+      flex flex-col items-center gap-6">
+        {filteredItems.map((item, index) => (
+          <li key={index}>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
