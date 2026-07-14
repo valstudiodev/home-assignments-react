@@ -107,7 +107,7 @@ export default function BookingDashboard(): React.JSX.Element {
   return (
     <form className="booking-form
     bg-bg p-10 text-gray flex-col-start
-    gap-5">
+    gap-5 mb-10">
       <h2 className="booking-form__title
       text-4xl text-center mb-5 underline">
         Форма бронювання готелю

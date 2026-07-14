@@ -35,3 +35,19 @@
 @utility hover-base {
   @apply transition-all duration-300;
 }
+
+@utility button-base {
+  @apply inline-flex items-center justify-center cursor-pointer hover-base;
+}
+
+@utility pos-absl-center {
+  @apply absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2
+}
+
+@utility modal-overlay {
+  @apply fixed inset-0 flex items-center justify-center bg-black/50 z-50;
+}
+
+@utility scroll-lock {
+  @apply overflow-hidden;
+}

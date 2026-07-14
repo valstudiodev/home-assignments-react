@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactEventHandler, use } from "react"
+import React, { useState, useEffect } from "react"
 
 // ============ Focus =============
 // export function InputFocus() {
@@ -64,9 +64,9 @@ export function UseEffectDeep() {
 
 
 // ========== task 1 ============
-interface ProductsProps {
-  products: string
-}
+// interface ProductsProps {
+//   products: string
+// }
 // type Items = [
 //   items: ProductsProps,
 // ]
@@ -100,6 +100,8 @@ export function ProductSearch({ items }: { items: string[] }): React.JSX.Element
   }, [search, items]);
 
 
+
+
   return (
     <div className="product-search bg-bg-card p-5 min-h-75">
       <div className="product-search__inner flex
@@ -121,3 +123,7 @@ export function ProductSearch({ items }: { items: string[] }): React.JSX.Element
     </div>
   )
 }
+
+
+
+// ===========================================

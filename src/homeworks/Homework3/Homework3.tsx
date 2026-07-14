@@ -4,10 +4,13 @@ import { SearchDashboard } from "../../components/searchDashboard/SearchDashboar
 import { SubtitleTask } from "../../components/fonts/Fonts";
 import { Game } from "../../components/ticTacToe/Game";
 // import Counter from "../../components/counter/Counter";
-// import { PasswordVisibility } from "@/components";
+import { PasswordVisibility } from "@/components";
 // import { ProductSearch } from "../../components/useEffect/UseEffect";
 // import { products } from "../../components/useEffect/UseEffect";
 import BookingDashboard from "../../components/bookingDashboard/BookingDashboard";
+
+// import UseRefDashboard from "../../components/useRef/UseRef";
+
 
 export default function Homework3() {
   return (
@@ -29,11 +32,15 @@ export default function Homework3() {
         <SubtitleTask number={14} />
         <BookingDashboard />
 
+
+
         {/* ================= */}
         {/* <Counter /> */}
         {/* <Toggle /> */}
-        {/* <PasswordVisibility /> */}
+        <PasswordVisibility />
         {/* <ProductSearch items={products} /> */}
+
+        {/* <UseRefDashboard /> */}
       </div>
     </div>
   );

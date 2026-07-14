@@ -5,8 +5,8 @@ export function PasswordButton({ isVisible, onClick }: PasswordButtonProps): Rea
   return (
     <button type="button"
       onClick={onClick}
-      className="btn flex-center
-    border px-3 py-1hover-base
+      className="btn flex-center border
+    border-gray px-1 py-1hover-base 
     cursor-pointer">
       {isVisible ? <IconEyeVisible /> : <IconEyeHidden />}
     </button>

@@ -1,4 +1,3 @@
-import { error } from "node:console";
 import { PaymentProps } from "./typesBookingDashboard";
 
 export function PaymentMethod({ values, errors, onChange }: PaymentProps): React.JSX.Element {

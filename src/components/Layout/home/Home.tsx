@@ -29,6 +29,9 @@ export default function Home({ activePage, setActivePage, renderContent }: HomeP
             <li className="main-menu__item cursor-pointer hover:text-white transition flex items-center gap-2" onClick={() => setActivePage('hw3')}>
               <IconFolder /> <span className="main-menu__span hover:text-grey transition duration-300">Homework 3</span>
             </li>
+            <li className="main-menu__item cursor-pointer hover:text-white transition flex items-center gap-2" onClick={() => setActivePage('hw4')}>
+              <IconFolder /> <span className="main-menu__span hover:text-grey transition duration-300">Homework 4</span>
+            </li>
           </ul>
         </div>
       )}
