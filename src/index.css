@@ -5,20 +5,32 @@
 @theme {
   --color-primary: #F8FAFC;
 
-  --color-bg:#0B0F19;
-  --color-bg-card:#1E293B;
+  --color-bg: #0B0F19;
+  --color-bg-card: #1E293B;
 
-  --color-border:#334155;
+  --color-border: #334155;
 
-  --color-btn-pending:#F59E0B;
-  --color-btn-cooking:#3B82F6;
-  --color-btn-ready:#10B981;
+  --color-btn-pending: #F59E0B;
+  --color-btn-cooking: #3B82F6;
+  --color-btn-ready: #10B981;
 
-  --color-gray:#818589;
+  --color-gray: #818589;
 
-  --color-button:#007BFF;
-  --color-red:#FF4A4A;
+  --color-button: #007BFF;
+  --color-red: #FF4A4A;
+
+
+  --color-white: #FFFFFF;
+  --color-gray-100: #E6E6E6;
+  --color-gray-50: #F2F2F2;
+  --color-gray-900: #1A1A1A;
+  --color-gray-700: #4D4D4D;
+  --color-gray-400: #999999;
+  --color-error: #EA4B48;
+  --color-success: #00B307;
 }
+
+
 
 @utility flex-center {
   @apply flex items-center justify-center;
@@ -29,7 +41,7 @@
 }
 
 @utility flex-col-start {
-  @apply flex flex-col items-start; 
+  @apply flex flex-col items-start;
 }
 
 @utility hover-base {
@@ -51,3 +63,7 @@
 @utility scroll-lock {
   @apply overflow-hidden;
 }
+
+/* @utility grid-adaptive {
+  @apply grid grid-cols-[repeat(auto-fill, minmax(200px, 1fr))]
+} */

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 type ChildrenProps = {
   children: React.ReactNode;
@@ -15,29 +15,28 @@ type DescriptionProps = {
 
 export default function RenderChildren(): React.JSX.Element {
 
-
   return (
     <div>
-      {/* <Card>
+      <Card>
         <Title titleText="This is title" />
         <Description textDes="This is description" />
         <p>Це додатковий дочірній текст</p>
-      </Card> */}
+      </Card>
 
-      {/* <CardAbout title="About me">
+      <CardAbout title="About me">
         <p>I love programming.</p>
-      </CardAbout> */}
+      </CardAbout>
 
-      {/* <Alert type="error">
+      <Alert type="error">
         User created successfully.
-      </Alert> */}
+      </Alert>
 
-      {/* <Button variant="primary" size="sm">
+      <Button variant="primary" size="sm">
         Save
       </Button>
       <Button variant="secondary" size="lg">
         Delete
-      </Button> */}
+      </Button>
 
 
     </div>

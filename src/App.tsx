@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, Footer, Home } from '@/components/Layout'
 import { Homework1, Homework2, Homework3, Homework4 } from "@/homeworks";
+import Homework5 from "./homeworks/Homework5/Homework5";
 
 export default function App() {
   const [activePage, setActivePage] = React.useState(() => {
@@ -15,7 +16,8 @@ export default function App() {
     if (activePage === 'hw1') return <Homework1 />;
     if (activePage === 'hw2') return <Homework2 />;
     if (activePage === 'hw3') return <Homework3 />;
-    if (activePage === 'hw4') return <Homework4 />
+    if (activePage === 'hw4') return <Homework4 />;
+    if (activePage === 'hw5') return <Homework5 />;
 
     return null
   }

@@ -101,3 +101,33 @@ export const IconDislike = () => (
     <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3" />
   </svg>
 );
+
+
+// =============== IconFavorite =================
+export const IconFavorite = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Серце */}
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+  </svg>
+);
+
+// ================ IconCart ================
+export const IconCart = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Колеса кошика */}
+    <circle cx="9" cy="21" r="1" />
+    <circle cx="20" cy="21" r="1" />
+    {/* Основа та корпус кошика */}
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+  </svg>
+);
+
+// ============= IconViewProduct ==============
+export const IconViewProduct = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Контур ока */}
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+    {/* Зіниця */}
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);

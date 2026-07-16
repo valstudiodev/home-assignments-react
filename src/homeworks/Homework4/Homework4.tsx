@@ -4,19 +4,27 @@ import { TitleHomework } from "../../components/fonts/Fonts";
 import Modal from "../../components/Modal/Modal";
 import { useState } from "react";
 import { useModal } from "../../hooks/useModal";
+import Messenger from "../../components/Messanger/Messenger";
+import { Game } from "../../components/GameSecretNumber/Game";
+import { SubtitleTask } from "../../components/fonts/Fonts";
 
 export default function Homework4(): React.JSX.Element {
   return (
     <div className="homework-container homework__container flex flex-col items-center gap-10">
       <div className="homework-preview-area h-1000">
-        <TitleHomework number={4} />
+        <TitleHomework number={1} />
+
+        <SubtitleTask number={1} />
+        <Messenger />
 
 
+        <SubtitleTask number={2} />
+        <Game />
         {/* ========== practice ========= */}
         {/* <RenderChildren /> */}
 
 
-        <UserPage />
+        {/* <UserPage /> */}
       </div>
     </div>
   )
@@ -53,7 +61,6 @@ function UserPage(): React.JSX.Element {
     </div>
   )
 }
-
 type ButtonProps = {
   title: string;
   onClick: () => void;

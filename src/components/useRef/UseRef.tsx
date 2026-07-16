@@ -17,8 +17,8 @@ import { useRef } from "react";
 export default function UseRefDashboard(): React.JSX.Element {
   return (
     <div>
-      {/* <InputFocus /> */}
-      {/* <InputManager /> */}
+      <InputFocus />
+      <InputManager />
       <ClickCount />
     </div>
   )

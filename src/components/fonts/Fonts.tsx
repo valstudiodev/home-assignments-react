@@ -10,7 +10,7 @@ interface SubtitleTask {
 
 export function TitleHomework({ number }: TitleHomeworkProps) {
   return (
-    <h2 className="title-homework mb-10 text-3xl font-bold text-[clamp(1.7rem,2.5vw,2.5rem)]">📚 Homework №{number}</h2>
+    <h2 className="title-homework mb-10 text-3xl text-center font-bold text-[clamp(1.7rem,2.5vw,2.5rem)]">📚 Homework №{number}</h2>
   )
 }
 

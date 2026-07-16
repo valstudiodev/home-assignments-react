@@ -22,7 +22,6 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     /* 🌟 ТЕПЕР ПРАВИЛЬНО: Прямо всередині compilerOptions */
-    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
