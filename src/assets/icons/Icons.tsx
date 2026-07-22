@@ -131,3 +131,33 @@ export const IconViewProduct = () => (
     <circle cx="12" cy="12" r="3" />
   </svg>
 );
+
+// ================== IconAvatar =================
+export const IconAvatar = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Голова */}
+    <circle cx="12" cy="7" r="4" />
+    {/* Плечі та силует */}
+    <path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2" />
+  </svg>
+);
+
+// ================== IconSearch =================
+export const IconSearch = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Лінза лупи */}
+    <circle cx="11" cy="11" r="7" />
+    {/* Ручка лупи */}
+    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+  </svg>
+);
+
+// ================== IconPlus =================
+export const IconPlus = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-[#333333]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {/* Вертикальна лінія */}
+    <line x1="12" y1="5" x2="12" y2="19" />
+    {/* Горизонтальна лінія */}
+    <line x1="5" y1="12" x2="19" y2="12" />
+  </svg>
+);

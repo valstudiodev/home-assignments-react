@@ -1,4 +1,3 @@
-import { ChangeEvent, ElementType } from "react";
 
 export interface Reaction {
   id: string;

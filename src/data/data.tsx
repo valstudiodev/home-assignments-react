@@ -1,0 +1,93 @@
+import { Contact } from "../components/ContactsDashboard/ContactsTypes";
+
+export const contacts: Contact[] = [
+  {
+    id: crypto.randomUUID(),
+    name: 'Emma Johnson',
+    avatar: 'https://i.pravatar.cc/150?img=32',
+    phone: '+1 (902) 555-0148',
+    email: 'emma.johnson@example.com',
+    status: 'online',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Liam Brown',
+    avatar: 'https://i.pravatar.cc/150?img=15',
+    phone: '+1 (902) 555-0213',
+    email: 'liam.brown@example.com',
+    status: 'offline',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Olivia Davis',
+    avatar: 'https://i.pravatar.cc/150?img=47',
+    phone: '+1 (902) 555-0379',
+    email: 'olivia.davis@example.com',
+    status: 'busy',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Noah Wilson',
+    avatar: 'https://i.pravatar.cc/150?img=18',
+    phone: '+1 (902) 555-0451',
+    email: 'noah.wilson@example.com',
+    status: 'online',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Sophia Miller',
+    avatar: 'https://i.pravatar.cc/150?img=41',
+    phone: '+1 (902) 555-0528',
+    email: 'sophia.miller@example.com',
+    status: 'offline',
+  },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: 'James Taylor',
+  //   avatar: 'https://i.pravatar.cc/150?img=11',
+  //   phone: '+1 (902) 555-0634',
+  //   email: 'james.taylor@example.com',
+  //   status: 'online',
+  // },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: 'Ava Anderson',
+  //   avatar: 'https://i.pravatar.cc/150?img=49',
+  //   phone: '+1 (902) 555-0715',
+  //   email: 'ava.anderson@example.com',
+  //   status: 'busy',
+  // },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: 'William Thomas',
+  //   avatar: 'https://i.pravatar.cc/150?img=23',
+  //   phone: '+1 (902) 555-0842',
+  //   email: 'william.thomas@example.com',
+  //   status: 'offline',
+  // },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: 'Mia Martinez',
+  //   avatar: 'https://i.pravatar.cc/150?img=35',
+  //   phone: '+1 (902) 555-0931',
+  //   email: 'mia.martinez@example.com',
+  //   status: 'online',
+  // },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: 'Benjamin White',
+  //   avatar: 'https://i.pravatar.cc/150?img=20',
+  //   phone: '+1 (902) 555-1086',
+  //   email: 'benjamin.white@example.com',
+  //   status: 'busy',
+  // },
+];
+
+export const contact: Contact = {
+  id: crypto.randomUUID(),
+  name: 'Emma Johnson',
+  avatar: 'https://i.pravatar.cc/150?img=32',
+  phone: '+1 (902) 555-0148',
+  email: 'emma.johnson@example.com',
+  status: 'online',
+}

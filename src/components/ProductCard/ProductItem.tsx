@@ -19,11 +19,6 @@ export function ProductItem({ product, children, ...rest }: ProductCardProps): R
         <img src={imagePath} alt={text}
           className="product-card__image w-full h-full" />
       </div>
-      {/* {tags && tags.length > 0 && (
-        <div className="product-tags">
-          {tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
-        </div>
-      )} */}
       <div className="product-card__inner p-3 flex
       justify-between gap-2">
         <div className="product-card__content grow">

@@ -1,0 +1,61 @@
+.avatar {
+  overflow: hidden;
+  position: relative;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(0, 255, 102, 0.2);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // Елементи
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      // width: 50%;
+      // height: 50%;
+    }
+  }
+
+  &__initials {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: calc(var(--avatar-size) * 0.4);
+  }
+
+  &--shape-circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &--shape-square {
+    border-radius: 8px;
+  }
+
+  &--size-sm {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--size-md {
+    width: 50px;
+    height: 50px;
+  }
+
+  &--size-lg {
+    width: 64px;
+    height: 64px;
+  }
+}

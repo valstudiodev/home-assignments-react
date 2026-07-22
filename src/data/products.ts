@@ -1,11 +1,10 @@
-import type { Product } from "../components/ProductCard/ProductCard.types";
 import apple from "@/assets/img/products/product-img-apple.webp";
 import cabbage from "@/assets/img/products/product-img-cabbage.webp";
 import capsicum from "@/assets/img/products/product-img-capsicum.webp";
 import cauliflower from "@/assets/img/products/product-img-cauliflower.webp";
 import chili from "@/assets/img/products/product-img-chili.webp";
 
-export const productsList: Product[] = [
+export const productsList: ProductCardProps[] = [
   {
     id: 'product-001',
     imagePath: apple,
@@ -40,7 +39,7 @@ export const productsList: Product[] = [
   }
 ]
 
-export const productItem: Product = {
+export const productItem: ProductCardProps = {
   id: 'product-001',
   imagePath: apple,
   title: 'Green Apple',
@@ -48,3 +47,30 @@ export const productItem: Product = {
   oldPrice: 20.99,
   badge: 'sale 50%',
 }
+
+interface ProductCardProps {
+  id: string;
+  imagePath: string;
+  title: string;
+  price: number;
+  oldPrice?: number;
+  badge?: string
+}
+
+interface Product {
+  id: string;
+  title: string;
+  price: number;
+}
+export const products: Product[] = [
+  {
+    id: '1',
+    title: 'Phone',
+    price: 500
+  },
+  {
+    id: '2',
+    title: 'Laptop',
+    price: 1200
+  }
+];

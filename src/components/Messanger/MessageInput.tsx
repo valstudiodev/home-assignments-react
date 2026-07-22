@@ -1,5 +1,5 @@
 import { MessageInputProps } from "./MessangerTypes";
-import { useState, FormEvent } from "react";
+import { useState } from "react";
 
 export function MessageInput({ onSendMessage }: MessageInputProps): React.JSX.Element {
   const [text, setText] = useState<string>('')
