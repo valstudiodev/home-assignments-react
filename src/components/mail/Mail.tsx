@@ -37,7 +37,7 @@ export default function Mail(): React.JSX.Element {
     )
   }
 
-  const markedMails = mails.filter(mail => mail.isMarked)
+  // const markedMails = mails.filter(mail => mail.isMarked)
 
   const filteredMails = useMemo(() => {
     return filterBy(

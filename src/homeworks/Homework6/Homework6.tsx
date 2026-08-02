@@ -1,18 +1,17 @@
 // import { Input } from "@/UI/index";
 // import { TestUseFetch } from "@/api/TestUseFetch";
-import { ProductsPage } from "@/components/productsPage/ProductsPage";
 // import { Search } from "@/UI/search/Search";
 import { SubtitleTask, TitleHomework } from "@/components/fonts/Fonts";
 import { Calculator } from "@/homeworks/Homework6/calculator";
 import { } from "@/homeworks/Homework6/useWindowSize/components/WindowSizeInfo";
 import { WindowSizeInfo } from "@/homeworks/Homework6";
 // =============
-import { App, App2 } from "@/homeworks/Homework6/calculator/Test";
-import { Parent, TestApp, AppCallback } from "@/homeworks/Homework6/dataGrid/Test";
-import { SearchDachboard } from "@/components/useDeferred/UseDererred";
+// import { App, App2 } from "@/homeworks/Homework6/calculator/Test";
+// import { Parent, TestApp, AppCallback } from "@/homeworks/Homework6/dataGrid/Test";
+// import { SearchDachboard } from "@/components/useDeferred/UseDererred";
 import Search from "@/homeworks/Homework6/useDebounce/components/Search";
 import DataGrid from "@/homeworks/Homework6/dataGrid/components/DataGrid";
-import HooksTestLab from "@/components/Test/textHooksOrders/TestUseHooks";
+// import HooksTestLab from "@/components/Test/textHooksOrders/TestUseHooks";
 
 
 
@@ -30,8 +29,8 @@ export default function Homework6(): React.JSX.Element {
           Переконайтеся, що ResultDisplay ререндериться лише тоді, коли змінюються A або B, а не коли змінюється інший 
           незалежний стан у батьківському компоненті (наприклад, лічильник, що не впливає на A чи B).
         */}
-        {/* <SubtitleTask number={1} /> */}
-        {/* <Calculator /> */}
+        <SubtitleTask number={1} />
+        <Calculator />
 
 
         {/* Задача 2. Таблиця з фільтрацією та сортуванням, чутлива до UI 
@@ -43,8 +42,8 @@ export default function Homework6(): React.JSX.Element {
           Використайте useCallback для функцій-обробників сортування та інших інтерактивних елементів, які передаються до дочірніх компонентів.
           Мета: забезпечити швидкий відгук на введення та кліки, навіть якщо обробка даних займає час.
         */}
-        {/* <SubtitleTask number={2} /> */}
-        {/* <DataGrid /> */}
+        <SubtitleTask number={2} />
+        <DataGrid />
 
 
 
@@ -54,8 +53,8 @@ export default function Homework6(): React.JSX.Element {
           Створіть компонент, який відображає поточні розміри вікна браузера (ширина x висота), використовуючи useWindowSize. 
           На основі розмірів відображати іконки монітора, планшета або телефона.
         */}
-        {/* <SubtitleTask number={3} /> */}
-        {/* <WindowSizeInfo /> */}
+        <SubtitleTask number={3} />
+        <WindowSizeInfo />
 
 
 
@@ -65,13 +64,13 @@ export default function Homework6(): React.JSX.Element {
           Створіть поле пошуку, де результати пошуку оновлюються не відразу після кожного символу, 
           а з невеликою затримкою (наприклад, 500мс) після зупинки введення, використовуючи useDebounce.
         */}
-        {/* <SubtitleTask number={4} /> */}
-        {/* <Search /> */}
+        <SubtitleTask number={4} />
+        <Search />
 
 
 
         {/* ========================= tests ========================= */}
-        <HooksTestLab />
+        {/* <HooksTestLab /> */}
 
         {/* <App2 /> */}
         {/* <Parent /> */}

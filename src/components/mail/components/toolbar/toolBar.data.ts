@@ -1,4 +1,4 @@
-import { Inbox, Mail, Send, Star, Trash2, ThumbsDown, Paperclip, Archive } from "lucide-react";
+import { Inbox, Mail, Send, Trash2, ThumbsDown, Archive } from "lucide-react";
 import { ToolBarAction } from "./ToolBar.types";
 
 

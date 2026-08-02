@@ -8,15 +8,15 @@ import { productsList } from "../../data/products";
 import { ReviewList, reviews } from "../../components/ReviewsBlock/ReviewList";
 import { ReviewActionButton } from "../../components/ReviewsBlock/ReviewsActions";
 import { ContactsDashboard } from "@/components/ContactsDashboard/ContactsDashboard";
-import { SmartphoneCharging, Tablet, MonitorCheck } from "lucide-react";
+// import { SmartphoneCharging, Tablet, MonitorCheck } from "lucide-react";
 // import { Button } from "@/components/Button/Button";
 
 // import RenderProductList from "../../components/useMemo/UseMemo";
 // import { SearchDachboard } from "../../components/useDeferred/UseDererred";
-import { TestGridLayout } from "@/test/TestGridLayout";
+// import { TestGridLayout } from "@/test/TestGridLayout";
 
 import Mail from "@/components/mail/Mail";
-import { UserProfile, Timer, AddButton } from "@/test/TestGridLayout";
+// import { UserProfile, Timer, AddButton } from "@/test/TestGridLayout";
 
 export default function Homework5(): React.JSX.Element {
   return (
@@ -25,7 +25,7 @@ export default function Homework5(): React.JSX.Element {
         <TitleHomework number={5} />
 
         {/* ================== task 3 ================ */}
-        {/* <SubtitleTask number={3} />
+        <SubtitleTask number={3} />
         <ProductList products={productsList}
           renderActions={(product) => (
             <>
@@ -38,10 +38,10 @@ export default function Homework5(): React.JSX.Element {
               <ButtonAction svg={<IconCart />} className='btn-add-to-card' onClick={() => console.log('Click', product.id)} />
             </>
           )}
-        /> */}
+        />
 
         {/* ================== task 5 ================ */}
-        {/* <SubtitleTask number={5} />
+        <SubtitleTask number={5} />
         <ReviewList user={reviews}
           renderActions={() => (
             <>
@@ -51,7 +51,7 @@ export default function Homework5(): React.JSX.Element {
               </div>
             </>
           )}
-        /> */}
+        />
 
 
         {/* <Button
@@ -72,13 +72,13 @@ export default function Homework5(): React.JSX.Element {
         </Button> */}
 
         {/* ================== task 7 ================ */}
-        {/* <SubtitleTask number={7} /> */}
-        {/* <ContactsDashboard /> */}
+        <SubtitleTask number={7} />
+        <ContactsDashboard />
 
 
         {/* ================== task 8 ================ */}
         <SubtitleTask number={8} />
-        {/* <Mail /> */}
+        <Mail />
 
 
 
