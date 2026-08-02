@@ -1,9 +1,10 @@
+import { Product } from "@/homeworks/Homework6/dataGrid/types";
 import { COLUMNS } from "@/homeworks/Homework6/dataGrid/data/dataProduct";
 import { GridHeaderProps } from "@/homeworks/Homework6/dataGrid/types/types";
 import { MoveUp, MoveDown } from "lucide-react";
 import { memo } from "react";
 
-function SortButtons({ sortConfig, onSort }: GridHeaderProps): React.JSX.Element {
+function SortButtons({ sortConfig, onSort }: GridHeaderProps<Product>): React.JSX.Element {
   console.log('-----Sort buttons render-----');
 
   return (
@@ -47,4 +48,4 @@ function SortButtons({ sortConfig, onSort }: GridHeaderProps): React.JSX.Element
   )
 }
 
-export default memo(SortButtons)
+export default memo(SortButtons) as <T>(props: GridHeaderProps<T>) => React.JSX.Element

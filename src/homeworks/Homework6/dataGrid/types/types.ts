@@ -34,9 +34,9 @@ export interface ProductsResponse {
   limit: number;
 }
 
-type ColumnKey = keyof Product
+// type ColumnKey = keyof Product
 
-export interface Column {
-  key: ColumnKey;
+export interface Column<T> {
+  key: keyof T;
   label: string;
 }
