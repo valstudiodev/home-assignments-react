@@ -3,7 +3,7 @@ import { ReviewItemProps } from "./ReviewsTypes";
 
 
 export function ReviewItem({ user, children }: ReviewItemProps): React.JSX.Element {
-  const { id, name, avatar, rating, review, date } = user
+  const { name, avatar, rating, review, date } = user
   return (
     <article className="review-item flex gap-4 items-start
     bg-gray-900 p-2">

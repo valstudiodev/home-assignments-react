@@ -1,7 +1,8 @@
-import { product } from "@/constants/products/Test";
-import { title } from "node:process";
+// import { product } from "@/constants/products/Test";
+// import { title } from "node:process";
+import { useDebounce } from "@/hooks/useDebounce";
 import { useDeferredValue, useState } from "react";
-import { useMemo, memo } from "react";
+import { useMemo, useEffect } from "react";
 
 interface Product {
   id: number;
@@ -30,18 +31,18 @@ export function SearchDachboard(): React.JSX.Element {
   //     .includes(search.toLowerCase())
   // )
 
-  const filteredProducts = products.filter((product) =>
-    product.title
-      .toLowerCase()
-      .includes(deferredSearch.toLowerCase())
-  )
+  // const filteredProducts = products.filter((product) =>
+  //   product.title
+  //     .toLowerCase()
+  //     .includes(deferredSearch.toLowerCase())
+  // )
 
-  // const filteredProducts = useMemo(() => {
-  //   const query = deferredSearch.toLowerCase()
-  //   return products.filter((product) =>
-  //     product.title.toLowerCase().includes(query)
-  //   )
-  // }, [deferredSearch])
+  const filteredProducts = useMemo(() => {
+    const query = deferredSearch.toLowerCase()
+    return products.filter((product) =>
+      product.title.toLowerCase().includes(query)
+    )
+  }, [deferredSearch])
 
   return (
     <div className="search-dachboard">
@@ -87,3 +88,27 @@ function ProductList({ products }: ProductsListProps): React.JSX.Element {
 
 
 
+// =========================== useDebounce ============================
+export function Search(): React.JSX.Element {
+  const [search, setSearch] = useState<string>('');
+
+  const debouncedSearch = useDebounce(search, 5000)
+
+  useEffect(() => {
+    if (!debouncedSearch) return
+
+    console.log(`Fetching: ${debouncedSearch}`);
+
+  }, [debouncedSearch]);
+
+  console.log('render search', search)
+  console.log('render debounced', debouncedSearch)
+
+  return (
+    <input
+      className="border p-2"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      type="text" />
+  )
+}

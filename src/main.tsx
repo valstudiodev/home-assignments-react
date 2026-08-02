@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -9,7 +8,5 @@ if (!appContainer) {
   throw new Error("Не вдалося знайти кореневий елемент з id 'root'!");
 }
 createRoot(appContainer).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <App />
 )

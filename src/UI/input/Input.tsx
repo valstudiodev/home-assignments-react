@@ -16,7 +16,7 @@ export default function Input({
   label,
   error,
   helperText,
-  inputSize,
+  inputSize = 'md',
   leftIcon,
   rightIcon,
   className = '',

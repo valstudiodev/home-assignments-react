@@ -1,0 +1,1 @@
+export { BASE_URL, COLUMNS } from '@/homeworks/Homework6/dataGrid/data/dataProduct'

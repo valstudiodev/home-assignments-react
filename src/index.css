@@ -59,6 +59,10 @@ html {
   @apply absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2
 }
 
+@utility pos-abs-center-before {
+  @apply before:absolute before:top-1/2 before:left-1/2 before:translate-x-1/2 before:translate-y-1/2
+}
+
 @utility modal-overlay {
   @apply fixed inset-0 flex items-center justify-center bg-black/50 z-50;
 }
