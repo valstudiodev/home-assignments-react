@@ -1,13 +1,5 @@
-
-import { Inbox, Mail, Send, Star, Trash2, ThumbsDown, Paperclip, Archive, LucideIcon } from "lucide-react";
-
-export interface SideBarItemData {
-  id: string;
-  title: string;
-  icon: LucideIcon;
-  count?: number;
-  href: string;
-}
+import { Inbox, Mail, Send, Star, Trash2, ThumbsDown, Paperclip, Archive } from "lucide-react";
+import { SideBarItemData } from "@/components/mail/types";
 
 export const sidebarItems: SideBarItemData[] = [
   {
@@ -60,6 +52,3 @@ export const sidebarItems: SideBarItemData[] = [
     href: '/investment',
   },
 ]
-
-
-

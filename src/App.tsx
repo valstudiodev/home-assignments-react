@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Footer, Home } from '@/components/Layout'
-import { Homework1, Homework2, Homework3, Homework4, Homework5, Homework6 } from "@/homeworks";
+import { Homework1, Homework2, Homework3, Homework4, Homework5, Homework6, TestPage } from "@/homeworks";
 
 export default function App() {
   const [activePage, setActivePage] = React.useState(() => {
@@ -18,6 +18,8 @@ export default function App() {
     if (activePage === 'hw4') return <Homework4 />;
     if (activePage === 'hw5') return <Homework5 />;
     if (activePage === 'hw6') return <Homework6 />;
+    if (activePage === 'tp') return <TestPage />
+
 
     return null
   }

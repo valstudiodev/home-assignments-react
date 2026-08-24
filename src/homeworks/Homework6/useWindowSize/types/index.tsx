@@ -1,1 +1,0 @@
-export { DeviceType } from './windowSize.type'

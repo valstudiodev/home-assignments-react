@@ -1,3 +1,9 @@
+export type MailFolder =
+  'inbox' |
+  'spam' |
+  'trash' |
+  'archive' |
+  'unread'
 
 export interface MailProps {
   id: string;
@@ -10,6 +16,7 @@ export interface MailProps {
   starred: boolean;
   hasAttachment: boolean;
   isMarked: boolean;
+  folder: MailFolder;
 }
 
 export interface MailListProps {
@@ -22,8 +29,17 @@ export interface MailListProps {
 export interface MailBodyProps {
   mails: MailProps[];
   selectedId: string[];
+  search: string;
+  isAllSelected: boolean;
+  collapsed: boolean;
+
   onToggle: (id: string) => void;
   onToggleMarked: (id: string) => void;
+  onSearch: (value: string) => void;
+  onToggleSideBar: () => void;
+  onSelectedAll: () => void;
+  // onMoveToSpam: () => void;
+  onAction: (actionId: string) => void;
 }
 
 export interface MailItemProps {
@@ -37,4 +53,6 @@ export interface MailItemsProps {
   mails: MailProps[];
   onToggleMarked: (id: string) => void
 }
+
+
 

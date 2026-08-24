@@ -1,9 +1,13 @@
 import React from "react";
-import { MarkedButtonProps } from "./Buttons.types";
+import { MarkedButtonProps } from "@/components/mail/types";
 // import { cn } from "@/utils/class/cn";
 import "./button.style.scss";
 
-export default function MarkedButton({ icon: Icon, isMarked, onClick }: MarkedButtonProps): React.JSX.Element {
+export default function MarkedButton({
+  icon: Icon,
+  isMarked,
+  onClick
+}: MarkedButtonProps): React.JSX.Element {
   return (
     <button
       onClick={onClick}

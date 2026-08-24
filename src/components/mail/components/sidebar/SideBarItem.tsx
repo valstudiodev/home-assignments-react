@@ -1,13 +1,16 @@
-import { LucideIcon } from "lucide-react";
+// import { LucideIcon } from "lucide-react";
+import { SideBarItemProps } from "@/components/mail/types";
 
-interface SideBarItemProps {
-  icon: LucideIcon;
-  title: string;
-  count?: number | string;
-  collapsed?: boolean;
-}
 
-export function SideBarItem({ icon: Icon, title, count, collapsed = false }: SideBarItemProps): React.JSX.Element {
+export default function SideBarItem({
+  icon: Icon,
+  title,
+  count,
+  collapsed = false,
+}: SideBarItemProps): React.JSX.Element {
+  console.log('----Sidebar item render----');
+
+
   return (
     <li
       className={`
@@ -37,15 +40,6 @@ export function SideBarItem({ icon: Icon, title, count, collapsed = false }: Sid
           )}
         </>
       )}
-
-
-
-      {/* <span
-        className="side-bar-item__quantity">
-        {count !== undefined && (
-          <span>{count}</span>
-        )}
-      </span> */}
     </li>
   )
 }

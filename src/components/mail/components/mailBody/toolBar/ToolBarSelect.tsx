@@ -1,8 +1,11 @@
 import { EllipsisVertical, RotateCw } from "lucide-react";
 import Checkbox from "@/UI/checkbox/Checkbox";
-import { ToolBarSelectProps } from "./ToolBar.types";
+import { ToolBarSelectProps } from "@/components/mail/types";
+import { memo } from "react";
 
-export function ToolBarSelect({ checked, onChange }: ToolBarSelectProps): React.JSX.Element {
+function ToolBarSelect({ checked, onChange }: ToolBarSelectProps): React.JSX.Element {
+  console.log('-----Toolbar select render-----');
+
   return (
     <div className="toolbar__select
     flex items-center gap-2 wrap">
@@ -15,4 +18,4 @@ export function ToolBarSelect({ checked, onChange }: ToolBarSelectProps): React.
   )
 }
 
-
+export default memo(ToolBarSelect)

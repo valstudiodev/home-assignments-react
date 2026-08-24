@@ -1,13 +1,9 @@
-import { LucideIcon } from "lucide-react";
+import { ComposeButtonProps } from "@/components/mail/types";
+import { memo } from "react";
 
-interface ComposeButtonProps {
-  title: string;
-  onClick?: () => void;
-  collapsed?: boolean;
-  icon: LucideIcon;
-}
+function ComposeButton({ title, onClick, collapsed, icon: Icon }: ComposeButtonProps): React.JSX.Element {
+  console.log('----Compose button render----');
 
-export function ComposeButton({ title, onClick, collapsed, icon: Icon }: ComposeButtonProps): React.JSX.Element {
   return (
     <button
       onClick={onClick}
@@ -27,3 +23,4 @@ export function ComposeButton({ title, onClick, collapsed, icon: Icon }: Compose
   )
 }
 
+export default memo(ComposeButton)

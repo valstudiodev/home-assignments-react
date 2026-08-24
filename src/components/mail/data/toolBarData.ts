@@ -1,6 +1,5 @@
 import { Inbox, Mail, Send, Trash2, ThumbsDown, Archive } from "lucide-react";
-import { ToolBarAction } from "./ToolBar.types";
-
+import { ToolBarAction } from "@/components/mail/types";
 
 export const toolbarActions: ToolBarAction[] = [
   {
@@ -33,5 +32,4 @@ export const toolbarActions: ToolBarAction[] = [
     label: 'Spam',
     icon: ThumbsDown,
   },
-
 ]

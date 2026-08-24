@@ -1,15 +1,43 @@
-import React from "react";
-import { MailList } from "../mailList/MailList";
-import { MailBodyProps } from "../mailList/mail.types";
+import React, { memo } from "react";
+import { MailHeader, MailList, ToolBar } from "@/components/mail/components/mailBody";
+import { MailBodyProps } from "@/components/mail/types";
 
-export function MailBody({ mails, selectedId, onToggle, onToggleMarked }: MailBodyProps): React.JSX.Element {
+function MailBody({
+  mails,
+  selectedId,
+  onToggle,
+  onToggleMarked,
+  search,
+  onSearch,
+  collapsed,
+  onToggleSideBar,
+  isAllSelected,
+  onSelectedAll,
+  onAction,
+}: MailBodyProps): React.JSX.Element {
 
   return (
-    <MailList
-      mails={mails}
-      selectedId={selectedId}
-      onToggle={onToggle}
-      onToggleMarked={onToggleMarked}
-    />
+    <div className="mail__body grow flex 
+    flex-col gap-4">
+      <MailHeader
+        search={search}
+        onSearch={onSearch}
+        collapsed={collapsed}
+        onToggleSideBar={onToggleSideBar}
+      />
+      <ToolBar
+        isAllSelected={isAllSelected}
+        onSelectAll={onSelectedAll}
+        onAction={onAction}
+      />
+      <MailList
+        mails={mails}
+        selectedId={selectedId}
+        onToggle={onToggle}
+        onToggleMarked={onToggleMarked}
+      />
+    </div>
   )
 }
+
+export default memo(MailBody)

@@ -1,5 +1,4 @@
-import { MailProps } from "@/components/mail/components/mailList/mail.types";
-
+import { MailProps } from "@/components/mail/types";
 
 export const mailsData: MailProps[] = [
   {
@@ -12,7 +11,8 @@ export const mailsData: MailProps[] = [
     unread: true,
     starred: true,
     hasAttachment: true,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '2',
@@ -24,7 +24,8 @@ export const mailsData: MailProps[] = [
     unread: true,
     starred: false,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '3',
@@ -36,7 +37,8 @@ export const mailsData: MailProps[] = [
     unread: false,
     starred: false,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '4',
@@ -48,7 +50,8 @@ export const mailsData: MailProps[] = [
     unread: false,
     starred: true,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '5',
@@ -60,7 +63,8 @@ export const mailsData: MailProps[] = [
     unread: true,
     starred: false,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '6',
@@ -72,7 +76,8 @@ export const mailsData: MailProps[] = [
     unread: false,
     starred: false,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '7',
@@ -84,7 +89,8 @@ export const mailsData: MailProps[] = [
     unread: false,
     starred: false,
     hasAttachment: true,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '8',
@@ -96,7 +102,8 @@ export const mailsData: MailProps[] = [
     unread: true,
     starred: false,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '9',
@@ -108,7 +115,8 @@ export const mailsData: MailProps[] = [
     unread: false,
     starred: false,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
   {
     id: '10',
@@ -120,6 +128,7 @@ export const mailsData: MailProps[] = [
     unread: false,
     starred: true,
     hasAttachment: false,
-    isMarked: false
+    isMarked: false,
+    folder: 'inbox',
   },
 ];

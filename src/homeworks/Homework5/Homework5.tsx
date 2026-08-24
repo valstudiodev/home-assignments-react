@@ -15,7 +15,7 @@ import { ContactsDashboard } from "@/components/ContactsDashboard/ContactsDashbo
 // import { SearchDachboard } from "../../components/useDeferred/UseDererred";
 // import { TestGridLayout } from "@/test/TestGridLayout";
 
-import Mail from "@/components/mail/Mail";
+import Mail from "@/components/mail/components/Mail";
 // import { UserProfile, Timer, AddButton } from "@/test/TestGridLayout";
 
 export default function Homework5(): React.JSX.Element {

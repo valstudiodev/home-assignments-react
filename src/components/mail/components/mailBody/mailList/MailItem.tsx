@@ -1,9 +1,10 @@
-import Checkbox from "@/UI/checkbox/Checkbox";
+import Checkbox from "@/components/mail/ui/Checkbox";
 import { Star } from "lucide-react";
-import { MailItemProps } from "./mail.types";
+import { MailItemProps } from "@/components/mail/types";
 import { MarkedButton } from "@/components/mail/components/buttons";
+import { memo } from "react";
 
-export function MailItem({ mail, checked, onToggle, onToggleMarked }: MailItemProps): React.JSX.Element {
+function MailItem({ mail, checked, onToggle, onToggleMarked }: MailItemProps): React.JSX.Element {
 
   return (
     <div
@@ -35,3 +36,4 @@ export function MailItem({ mail, checked, onToggle, onToggleMarked }: MailItemPr
     </div>
   )
 }
+export default memo(MailItem)
